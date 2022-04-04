@@ -18,9 +18,15 @@
     color: #fff;
     background-color: black;
 }
+
+.noteList{
+    width: 300px;
+}
 .noteText{
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 }
-.done{
+.done span{
     text-decoration:line-through;
 }

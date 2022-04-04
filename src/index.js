@@ -26,34 +26,31 @@ class ToDo extends React.Component {
   }
 
   showNotes() {
-  
     return (
       <div className='noteList'>
         {this.state.notes.map(note => {
           return (
-            <p className='noteText' >{note}</p>
+            <p onClick={this.action} className='noteText' >
+              <span>{note}</span>
+              <button onClick={this.noteDelete}> X </ button>
+            </p>
           )
         })}
       </div>
     )
   }
 
-  action() {
-    let notesWrap = document.querySelector(".noteList");
-    if(!notesWrap) return
-
-    notesWrap.addEventListener("click", (e) => {
-      if (!e.target.classList.contains("noteList")) return
-      
-      e.target.classList.toggle("done");
-    })
-
+  action(e) {
+    e.target.classList.toggle("done")
   }
+  noteDelete(e) {
+    e.target.closest(".noteText").remove();
+  }
+
   render() {
     return (
       <div>
         {this.showNotes()}
-        {this.action()}
         <input id='noteText' type="text" />
         <button type="submit" onClick={this.addNote.bind(this)} >Add Note</button>
       </div>
