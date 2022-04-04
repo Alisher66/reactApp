@@ -1,0 +1,26 @@
+.post-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    
+}
+
+.bg-ligth {
+    color: #000;
+    background-color: #fff;
+}
+
+.bg-dark {
+    color: #fff;
+    background-color: black;
+}
+.noteText{
+    cursor: pointer;
+}
+.done{
+    text-decoration:line-through;
+}
