@@ -1,0 +1,12 @@
+.word-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: space-around;
+    height: 300px;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    padding: 20px;
+    background-color: #fff;
+}

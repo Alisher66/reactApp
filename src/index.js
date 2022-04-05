@@ -1,67 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 
+// import Words from "./task5/Words";
+import AddWord from './task4/AddWord';
+import Contacts from "./task6/Contacts";
 
-class ToDo extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      notes: []
-    };
-  }
 
-  addNote() {
-    let textEl = document.querySelector("#noteText");
-    if (textEl.value.trim() === "") {
-      textEl.value = "";
-      return
-    }
-    this.state.notes.push(textEl.value.trim())
-    this.setState({
-      notes: [...this.state.notes]
-    });
-    textEl.value = "";
-  }
-
-  showNotes() {
-    return (
-      <div className='noteList'>
-        {this.state.notes.map(note => {
-          return (
-            <p onClick={this.action} className='noteText' >
-              <span>{note}</span>
-              <button onClick={this.noteDelete}> X </ button>
-            </p>
-          )
-        })}
-      </div>
-    )
-  }
-
-  action(e) {
-    e.target.classList.toggle("done")
-  }
-  noteDelete(e) {
-    e.target.closest(".noteText").remove();
-  }
-
-  render() {
-    return (
-      <div>
-        {this.showNotes()}
-        <input id='noteText' type="text" />
-        <button type="submit" onClick={this.addNote.bind(this)} >Add Note</button>
-      </div>
-    );
-  }
-}
-
+// const wordsList = [
+//   {text: "text1", author: "Dima"},
+//   {text: "text2", author: "Dima2"},
+//   {text: "text3", author: "Dima3"},
+//   {text: "text4", author: "Dim4"},
+//   {text: "text5", author: "Dima5"},
+//   {text: "text6", author: "Dima6"},
+// ]
+// ReactDOM.render(
+//   <Words words={wordsList} />,
+//   document.getElementById('root')
+// );
 
 
 ReactDOM.render(
-  <ToDo />,
+  <Contacts />,
   document.getElementById('root')
 );
 
