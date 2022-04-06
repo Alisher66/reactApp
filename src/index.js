@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 
+// import AddWord from './task4/AddWord';
 // import Words from "./task5/Words";
-import AddWord from './task4/AddWord';
-import Contacts from "./task6/Contacts";
-
+// import Contacts from "./task6/Contacts";
+import ToDo from "./task7/ToDo";
 
 // const wordsList = [
 //   {text: "text1", author: "Dima"},
@@ -22,7 +22,7 @@ import Contacts from "./task6/Contacts";
 
 
 ReactDOM.render(
-  <Contacts />,
+  <ToDo />,
   document.getElementById('root')
 );
 

@@ -10,3 +10,17 @@
     width: 50%;
     text-align: center;
 }
+
+.contact-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+th, td{
+    width: 200px;
+    text-align: left;
+}
+
+tr{
+    border-bottom: 1px solid #000;
+}
