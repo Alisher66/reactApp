@@ -5,8 +5,7 @@ import reportWebVitals from './reportWebVitals';
 // import AddWord from './task4/AddWord';
 // import Words from "./task5/Words";
 // import Contacts from "./task6/Contacts";
-import ToDo from "./task7/ToDo";
-
+// import ToDo from "./task7/ToDo";
 // const wordsList = [
 //   {text: "text1", author: "Dima"},
 //   {text: "text2", author: "Dima2"},
@@ -20,9 +19,14 @@ import ToDo from "./task7/ToDo";
 //   document.getElementById('root')
 // );
 
+// import Links from "./useState1/Links";
+// import Clock from "./useState2/Clock";
+// import Position from "./useEffect1/Position";
+import SelectColor from "./useEffect2/SelectColor";
+
 
 ReactDOM.render(
-  <ToDo />,
+  <SelectColor />,
   document.getElementById('root')
 );
 
