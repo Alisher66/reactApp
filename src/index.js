@@ -22,11 +22,13 @@ import reportWebVitals from './reportWebVitals';
 // import Links from "./useState1/Links";
 // import Clock from "./useState2/Clock";
 // import Position from "./useEffect1/Position";
-import SelectColor from "./useEffect2/SelectColor";
-
+// import SelectColor from "./useEffect2/SelectColor";
+// import CalculateFactorial from "./useMemo1/Calc";
+import ShowInput from "./useMemo2/ShowInput"
+// import HideInput from "./useRef1/HideInput";
 
 ReactDOM.render(
-  <SelectColor />,
+  <ShowInput />,
   document.getElementById('root')
 );
 
