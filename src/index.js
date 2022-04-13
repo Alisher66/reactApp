@@ -24,11 +24,13 @@ import reportWebVitals from './reportWebVitals';
 // import Position from "./useEffect1/Position";
 // import SelectColor from "./useEffect2/SelectColor";
 // import CalculateFactorial from "./useMemo1/Calc";
-import ShowInput from "./useMemo2/ShowInput"
+// import ShowInput from "./useMemo2/ShowInput"
 // import HideInput from "./useRef1/HideInput";
+// import MyComponent from "./uscCallback/MyComponent";
+import MyComponent2 from "./uscCallback/Sum";
 
 ReactDOM.render(
-  <ShowInput />,
+  <MyComponent2 />,
   document.getElementById('root')
 );
 
