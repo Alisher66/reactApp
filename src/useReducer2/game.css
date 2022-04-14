@@ -1,0 +1,10 @@
+
+.wrap {
+    display: flex;
+    
+}
+
+.box{
+    padding: 20px;
+    border: 1px solid #000;
+}

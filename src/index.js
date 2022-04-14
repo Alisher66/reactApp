@@ -27,10 +27,13 @@ import reportWebVitals from './reportWebVitals';
 // import ShowInput from "./useMemo2/ShowInput"
 // import HideInput from "./useRef1/HideInput";
 // import MyComponent from "./uscCallback/MyComponent";
-import MyComponent2 from "./uscCallback/Sum";
+// import MyComponent2 from "./uscCallback/Sum";
+
+// import Auto from "./useReducer/Auto";
+import Game from "./useReducer2/Game";
 
 ReactDOM.render(
-  <MyComponent2 />,
+  <Game />,
   document.getElementById('root')
 );
 
